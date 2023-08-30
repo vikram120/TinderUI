@@ -1,24 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TinderUi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="Nqt-SC-VDD">
+                                <rect key="frame" x="27" y="112" width="336" height="666"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="666" id="Rqp-f8-Q2F"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tinderlogo" translatesAutoresizingMaskIntoConstraints="NO" id="zbI-d9-uSV">
+                                <rect key="frame" x="133" y="53" width="126" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="svV-BF-IMw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rewind_circle" translatesAutoresizingMaskIntoConstraints="NO" id="fPP-2Z-fSA">
+                                <rect key="frame" x="27" y="698" width="83" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="uu4-lJ-M6B"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dismiss_circle" translatesAutoresizingMaskIntoConstraints="NO" id="KwN-hA-OJ2">
+                                <rect key="frame" x="118" y="698" width="64" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Ame-M6-zi1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like_circle" translatesAutoresizingMaskIntoConstraints="NO" id="GGS-Xw-57s">
+                                <rect key="frame" x="201" y="702" width="75" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Pz1-Bx-9ec"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="super_like_circle" translatesAutoresizingMaskIntoConstraints="NO" id="qEO-J0-6bu">
+                                <rect key="frame" x="284" y="695" width="74" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="AEg-IS-XpB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.3.horizontal.decrease" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tAE-R5-dWd">
+                                <rect key="frame" x="7" y="68.333333333333329" width="52" height="20"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28.329999999999998" id="Vdv-xK-m9L"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gUE-7a-y6H">
+                                <rect key="frame" x="338" y="64.666666666666671" width="43" height="28"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30.670000000000002" id="d08-Kl-xJp"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnR-X6-pQm">
+                                <rect key="frame" x="47" y="716" width="45" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="KD9-QJ-4ds"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="rewindBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hLw-V8-0bO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3J-yI-oAc">
+                                <rect key="frame" x="125" y="716" width="47" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="T87-Yr-VL0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="cancelBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KL1-Mr-Dpi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9c3-zv-bXS">
+                                <rect key="frame" x="215" y="716" width="44" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="i74-fZ-Sck"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="likeBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MoN-nf-5HL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCB-0N-TUe">
+                                <rect key="frame" x="300" y="716" width="47" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="63I-2h-6h9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="superLikeBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ENW-t0-0gQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elena Markus" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxv-xG-hNQ">
+                                <rect key="frame" x="47" y="649" width="300" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Cqf-RE-kd8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="zbI-d9-uSV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="0bl-rT-cbR"/>
+                            <constraint firstItem="iCB-0N-TUe" firstAttribute="leading" secondItem="GGS-Xw-57s" secondAttribute="trailing" constant="24" id="0vB-Qt-QTB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GGS-Xw-57s" secondAttribute="trailing" constant="114" id="2rE-Kx-MDX"/>
+                            <constraint firstItem="KwN-hA-OJ2" firstAttribute="leading" secondItem="fnR-X6-pQm" secondAttribute="trailing" constant="26" id="32D-Yf-TIK"/>
+                            <constraint firstItem="GGS-Xw-57s" firstAttribute="top" secondItem="zbI-d9-uSV" secondAttribute="bottom" constant="598" id="5wR-ej-KW9"/>
+                            <constraint firstItem="Nqt-SC-VDD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="8VH-XP-zwz"/>
+                            <constraint firstItem="fPP-2Z-fSA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="8rU-zu-zec"/>
+                            <constraint firstItem="GGS-Xw-57s" firstAttribute="leading" secondItem="u3J-yI-oAc" secondAttribute="trailing" constant="29" id="ASb-RD-GWZ"/>
+                            <constraint firstItem="gUE-7a-y6H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Bw6-gj-zEv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KwN-hA-OJ2" secondAttribute="trailing" constant="208" id="DOH-h1-E9a"/>
+                            <constraint firstItem="tAE-R5-dWd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="Eaw-cb-zJq"/>
+                            <constraint firstItem="zbI-d9-uSV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="FG5-n5-CML"/>
+                            <constraint firstItem="u3J-yI-oAc" firstAttribute="leading" secondItem="fPP-2Z-fSA" secondAttribute="trailing" constant="15" id="HrE-7h-Olm"/>
+                            <constraint firstItem="Nqt-SC-VDD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="IdW-Pk-Fez"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fPP-2Z-fSA" secondAttribute="trailing" constant="280" id="LG6-5i-4Q7"/>
+                            <constraint firstItem="qEO-J0-6bu" firstAttribute="leading" secondItem="9c3-zv-bXS" secondAttribute="trailing" constant="25" id="Qlp-qq-g0j"/>
+                            <constraint firstItem="gUE-7a-y6H" firstAttribute="leading" secondItem="zbI-d9-uSV" secondAttribute="trailing" constant="79" id="R5R-rJ-Fug"/>
+                            <constraint firstItem="zbI-d9-uSV" firstAttribute="leading" secondItem="tAE-R5-dWd" secondAttribute="trailing" constant="74" id="TBa-q6-VSg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qEO-J0-6bu" secondAttribute="trailing" constant="32" id="Vou-j7-f8d"/>
+                            <constraint firstItem="KwN-hA-OJ2" firstAttribute="top" secondItem="zbI-d9-uSV" secondAttribute="bottom" constant="594" id="XHc-3S-Uob"/>
+                            <constraint firstItem="iCB-0N-TUe" firstAttribute="top" secondItem="gUE-7a-y6H" secondAttribute="bottom" constant="622.33000000000004" id="Xak-8E-iBw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wxv-xG-hNQ" secondAttribute="trailing" constant="43" id="Y2j-4f-Qtc"/>
+                            <constraint firstItem="u3J-yI-oAc" firstAttribute="top" secondItem="zbI-d9-uSV" secondAttribute="bottom" constant="612" id="bt0-UX-qph"/>
+                            <constraint firstItem="tAE-R5-dWd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="7" id="dml-uY-oUJ"/>
+                            <constraint firstItem="fPP-2Z-fSA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="651" id="eVM-wD-7GK"/>
+                            <constraint firstItem="9c3-zv-bXS" firstAttribute="top" secondItem="zbI-d9-uSV" secondAttribute="bottom" constant="612" id="f04-Qu-PNy"/>
+                            <constraint firstItem="Wxv-xG-hNQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="gLZ-nw-RNc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iCB-0N-TUe" secondAttribute="trailing" constant="43" id="hPF-An-NrL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nqt-SC-VDD" secondAttribute="trailing" constant="27" id="ikB-vx-gZK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gUE-7a-y6H" secondAttribute="trailing" constant="9" id="klS-nc-vdt"/>
+                            <constraint firstItem="qEO-J0-6bu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="648" id="mM4-KS-4G1"/>
+                            <constraint firstItem="9c3-zv-bXS" firstAttribute="leading" secondItem="KwN-hA-OJ2" secondAttribute="trailing" constant="33" id="rPd-dn-eQl"/>
+                            <constraint firstItem="KwN-hA-OJ2" firstAttribute="leading" secondItem="fPP-2Z-fSA" secondAttribute="trailing" constant="8" id="rY8-aP-Fbx"/>
+                            <constraint firstItem="GGS-Xw-57s" firstAttribute="leading" secondItem="KwN-hA-OJ2" secondAttribute="trailing" constant="19" id="rYq-fi-cLB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zbI-d9-uSV" secondAttribute="trailing" constant="131" id="rlr-cH-ShK"/>
+                            <constraint firstItem="qEO-J0-6bu" firstAttribute="leading" secondItem="GGS-Xw-57s" secondAttribute="trailing" constant="8" symbolic="YES" id="sFd-pl-hfc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nqt-SC-VDD" secondAttribute="bottom" constant="32" id="sxM-1p-bzV"/>
+                            <constraint firstItem="fnR-X6-pQm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="vrA-xo-TSa"/>
+                            <constraint firstItem="Wxv-xG-hNQ" firstAttribute="top" secondItem="zbI-d9-uSV" secondAttribute="bottom" constant="545" id="wYs-Ax-c1r"/>
+                            <constraint firstItem="fnR-X6-pQm" firstAttribute="top" secondItem="tAE-R5-dWd" secondAttribute="bottom" constant="623.66999999999996" id="z1J-M9-sMq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tinderLabel" destination="Wxv-xG-hNQ" id="hff-Mx-VRw"/>
+                        <outlet property="tinderimages" destination="Nqt-SC-VDD" id="03I-7v-mKL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="46.153846153846153" y="-2.1327014218009479"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dismiss_circle" width="160" height="160"/>
+        <image name="image1" width="4144" height="7360"/>
+        <image name="like_circle" width="80" height="80"/>
+        <image name="line.3.horizontal.decrease" catalog="system" width="128" height="73"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="rewind_circle" width="64" height="64"/>
+        <image name="super_like_circle" width="64" height="64"/>
+        <image name="tinderlogo" width="300" height="168"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
